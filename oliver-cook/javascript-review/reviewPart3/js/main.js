@@ -1,0 +1,336 @@
+///review 3  JS Version////
+
+//variables//
+
+//functions//
+
+//Operators//
+
+//Conditionals//
+
+//if/else
+
+//for loops/while loops///
+
+//Arrays//
+
+//Objects//
+
+//Advanced Functions and Objects//
+
+
+
+//VARIABLES//
+
+
+const word = 'string';
+const number = 999;
+const name = "Freddy Jackson";
+const anotherName = "Clarence Boddiker";
+const futureCop = "Robocop";
+console.log(word);
+console.log(number);
+console.log(name);
+console.log(anotherName);
+
+
+console.log(`I am ${futureCop} and you, ${anotherName}, are under arrest!
+Dead or Alive
+You are coming with me....`);
+
+// var name = "Michelle";  // or `Michelle`
+// console.log(`Hello, ${name}!`);​
+// => "Hello, Michelle!"
+
+
+//FUNCTIONS//
+
+const martianGreeting = function(greeting, leader){
+
+martianGreeting("Greeting Humand, take us to your Leader!")
+
+}
+
+// input("Greeting Humand, Take us to your Leader!");
+
+
+
+
+//Conditionals!!!//
+
+// if/else
+
+const  weight = 80;
+ if (weight >= 85){
+   console.log("You are at your optimal weight ");
+ } else if (weight >= 60){
+   console.log("You are seriously underweight!");
+ } else if (weight > 160){
+  console.log("You are seriously overweight, fatso!!");
+}
+
+
+
+//////FOR LOOPS////
+
+for (let i = 0; i < 5; i = i + 1) {
+  console.log( i );
+}
+
+
+
+
+
+
+
+
+
+/////ARRAYS///
+// Create an array to hold your top five choices of something (dogs, books, presidents, whatever). If you choose movies, the right top choice is "Satantango".
+
+// For each choice, log to the screen a string like: "My #1 choice is blue."
+// Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is.
+
+let  faveEightiesMovies = ['Excalibur','Tron','The Black Hole','The Empire Strikes Back','Robo Cop']
+
+// console.log(faveEightiesMovies.length);
+faveEightiesMovies.push("Krull");
+faveEightiesMovies.reverse;
+faveEightiesMovies[6] = "Return of the Jedi;"
+faveEightiesMovies.unshift("Blade Runner");
+faveEightiesMovies.join();
+
+const firstChoice = faveEightiesMovies[1]
+const secondChoice = faveEightiesMovies[2]
+const thirdChoice = faveEightiesMovies[3]
+const fourthChoice = faveEightiesMovies[4]
+const fithChoice = faveEightiesMovies[5]
+
+// console.log("My First choice is");
+// console.log(" My First Choice is " + faveEightiesMovies[1]);+
+console.log(" My First Choice is " + firstChoice + " My Second Choice is " + secondChoice + " My Third Choice is " + thirdChoice + " My Fourth Choice is " + fourthChoice);
+console.log(" My Second Choice is " + secondChoice);
+console.log(" My Third Choice is " + thirdChoice);
+console.log(" My Fourth Choice is " + fourthChoice);
+console.log(" My Fith Choice is " + fithChoice);
+
+
+////Rainbow Colors///
+// Starting with an empty array called rainbowColors:
+// Add "orange" to the end of the array
+// Add "red" to the start of the array
+// Add "yellow" to the end
+// Add "green", "blue", "indigo", and "violet" to the end of the array
+// Try and do this using one method
+// Log out the length of the array
+// Log out the second item
+// Log out the last item (make this flexible/dynamic!)
+// Log out the index of the string "blue"
+
+
+
+let rainbowColors = [];
+
+
+rainbowColors.push("Orange");
+rainbowColors.unshift("Red");
+rainbowColors.push("Yellow");
+rainbowColors.push("Green","Blue","Indigo","Violet");
+console.log(rainbowColors);
+console.log(rainbowColors.length);
+console.log(rainbowColors[2],[7]);
+console.log(rainbowColors.indexOf("Blue"));
+
+
+
+
+var twoColors = rainbowColors.slice( 1, 3 );
+console.log(twoColors);
+
+// Bonus: Find out the difference between .slice and .splice
+// Create an array called twoColors using one method - don't change the rainbowColors array! Essentially pull two colors out of the array (say, between the index of 1 and 3)
+// Starting with this array var nums = [0, 1, 2, 2, 2, 3, 3, 4, 5];, remove the duplicates destructively using slice or splice (whichever one is appropriate)
+
+
+var nums = [0, 1, 2, 2, 2, 3, 3, 4, 5];
+
+var newNums = nums.slice(0, 1, 2, 5, 7, 8);
+
+console.log(newNums);
+
+
+
+// Bonus: Work with arrays of arrays
+// Starting with this array var arrOfArrs = [["inner array first item", "inner array second item"], ["first", "second", "third"]];
+// Access "inner array first item" and print it out"
+// Print "third" by using a dynamic index
+// Bonus Bonus: Loop through the second inner array! Print out first, then second, then third
+
+
+
+
+// Array and Functions Bonus Material
+// Define a function maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript. You'll have to remember your pre-work, or do some googling to figure this out.
+
+
+// const maxOfTwoNumbers = function( num1, num2)
+// {
+// if (num1 < num2){
+// console.log(num2);
+// } else {
+//
+// console.log('null');
+//
+// }
+// }
+// maxOfTwoNumbers (24, 37);
+
+
+
+
+
+// console.log(num1 > num2);
+
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+
+
+const maxofThreeNumbers = function(num1, num2, num3)
+{
+if (num1 < num2 && num2 < num3){
+console.log(num3);
+} else {
+  console.log('null');
+    }
+}
+
+maxofThreeNumbers(12, 26, 35);
+
+// Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+
+//single letter function//
+const charLetter = function(letter)
+{
+if (letter === "a"){
+ console.log("true!")
+} else if (letter !== "a")
+  console.log("false!");
+ }
+
+charLetter("a");
+
+
+//array version //
+const checkLetter = function(letter)
+{
+const vowels = ["a","e","i","o","u"];
+// console.log(vowels);
+if (vowels.includes(letter)){
+console.log("true!");
+} else {
+  console.log("false!");
+ }
+
+}
+checkLetter("a");
+
+
+// Define a function sumArray and a function multiplyArray that
+// sums and multiplies (respectively) all the numbers in an array of numbers.
+ // For example, sumArray([1,2,3,4]) should return 10,
+  // and multiplyArray([1,2,3,4]) should return 24.
+
+// OLD CODE
+// let numArray = [1,2,3,4];
+//
+// const mathsArray = function(sum,mul){
+// //
+//   let sum = 0;
+//   let mul = 1;
+//  for (let i = 0; i  < numArray.length; i++){
+//    // console.log(numArray[i]);
+//    mul *= numArray[i];
+//    sum += numArray[i];
+//  }
+// }
+//  // console.log(mul);
+// mathsArray(0,1);
+
+
+
+
+// let numArray = [1,2,3,4];
+//   let sum = 0;
+//
+//  for (let i = 0; i  < numArray.length; i++){
+//    // console.log(numArray[i]);
+//    sum += numArray[i];
+//
+// }
+//
+//  console.log(sum);
+
+
+
+ let numArray = [1,2,3,4];
+ const mathsArray = function(arrayToCompute){
+   let sum = 0;
+   let mul = 1;
+   for (let i = 0; i  < arrayToCompute.length; i++){
+      sum += arrayToCompute[i];
+      mul *= arrayToCompute[i];
+    }
+   console.log(sum);
+   console.log(mul);
+ }
+ mathsArray(numArray)
+
+
+
+let anatomyBodyParts = ["Head", "Arms","Hands", "Chest", "Abdomen","Legs","Feet"];
+
+    for (let i = 0; i < anatomyBodyParts.length; i){
+
+}
+
+console.log(anatomyBodyParts);
+
+
+
+
+
+
+
+
+// var Array = ["1", "2", "3", "4"];
+// var total=1;
+//
+// for (var i = 0; i < Array.length; ++i) {
+//     total *= Array[i];
+// }
+//
+// console.log(total);
+ // }
+//
+//
+//
+// }
+//
+// const multArray = function(){
+//
+//
+// }
+
+
+
+// if( true ){
+  // console.log( "This will run" );
+  // } else {
+    // console.log( "This won't" );
+    //   num2 = 37,
+    // }
+
+
+    // if (secretWord === "true!" ){
+    //     console.log("That is the Correct answer!");
+    //   } else {
+    //     console.log("Sorry Jabroni, thats false!!");
